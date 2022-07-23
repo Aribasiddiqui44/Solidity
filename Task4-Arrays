@@ -1,0 +1,32 @@
+// SPDX-License-Identifier: Unlicensed
+pragma solidity ^0.8.15;
+
+contract task4
+{
+    struct student
+    {
+        string name;
+        string fname;
+        int rollno;
+        int age;  
+    }
+    student s = student("Ariba","Sualah", 52,18);
+    
+    function NAME() public view returns(string memory)
+    {
+        return(s.name);
+    }
+    function FATHER_NAME() public view returns(string memory)
+    {
+        return s.fname;
+    }
+    function ROLL_NO() public view returns(int)
+    {
+        return s.rollno;
+    }
+    function AGE() public view returns(int)
+    {
+        return s.age;
+    }
+}
+
