@@ -1,0 +1,33 @@
+// SPDX-License-Identifier: Unlicensed
+pragma solidity ^0.8.15;
+
+contract task2
+{
+    uint8  a;
+    uint8  b;
+
+    function firstno(uint8 x) public 
+    {
+        a=x;
+    }
+    function secondno(uint8 y) public 
+    {
+        b=y;
+    }
+    function add() public view returns(uint8)
+    {
+        return(a+b);
+    }
+    function sub() public view returns(uint8)
+    {
+        return(a-b);
+    }
+    function mult() public view returns(uint8)
+    {
+        return(a*b);
+    }
+    function divide() public view returns(uint8)
+    {
+        return(a/b);
+    }
+}
